@@ -1,16 +1,20 @@
-import { cn } from "@/utils/cn";
+"use client";
+
+import { Box, Text } from "@chakra-ui/react";
 
 type HelloWorldProps = Readonly<{
     name: string;
     className?: string;
 }>;
 
-export default function HelloWorld({ name, className }: HelloWorldProps) {
+export default function HelloWorld({ name }: HelloWorldProps) {
     return (
-        <div className={cn(className)}>
-            Hello
-            {" "}
-            {name}
-        </div>
+        <Box>
+            <Text>
+                Hello
+                {" "}
+                {name}
+            </Text>
+        </Box>
     );
 }

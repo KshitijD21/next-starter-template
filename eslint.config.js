@@ -3,6 +3,7 @@ import antfu from "@antfu/eslint-config";
 export default antfu({
     plugins: [{ next: "@next/next/recommended" }],
     react: true,
+    unocss: true,
     jsx: true,
     formatters: true,
     stylistic: {

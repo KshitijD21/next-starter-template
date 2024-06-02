@@ -49,5 +49,13 @@
         "scss",
         "pcss",
         "postcss"
-    ]
+    ],
+
+    // Fix CSS atRule for UnoCSS
+    "css.customData": [
+        ".vscode/unocss.json"
+    ],
+
+    // Use project typescript sdk
+    "typescript.tsdk": "node_modules/typescript/lib"
 }
